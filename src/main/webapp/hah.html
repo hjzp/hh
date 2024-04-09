@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>hah</h1>
+<li>
+    <form action="doLogout" method="post">
+        <label>
+            <input type="text" th:name="${_csrf.getParameterName()}" th:value="${_csrf.token}" hidden="">
+        </label>
+        <button type="submit">
+            退出登录
+        </button>
+    </form>
+</li>
+</body>
+</html>
